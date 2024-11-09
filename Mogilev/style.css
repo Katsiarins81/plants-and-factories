@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    transition:all .8s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+header ul{
+    margin: 0;
+    font-size: 0;/* Выставляем родителю значение в ноль,
+   что бы убрать горизонтальные отступы в 1 символ между li */
+    padding: 20px 0;
+    background-color: #c2641f;
+}
+header li{
+    display: inline-block;
+    list-style: none;
+    text-align: center;/* выравнивание  текста по горизонтали*/
+
+}
+
+#d1 {
+    width: 18%;
+    border-left: none;
+}
+#d2,#d3,#d4,#d7{
+    width: 13.3%;
+}
+#d5,#d6{
+    width: 14%;
+}
+h1{
+    margin: auto;
+    width: max-content;
+}
+header li{
+    font-family: 'Ruslan Display', cursive;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: bottom;
+    border-left: solid 2px #fefbfb;
+    box-sizing: border-box;
+    background-color: #c2641f;
+    transition:all .8s ease-in-out;
+
+}
+a li:hover{
+    font-size: 35px;
+    transition:font-size .8s ease;
+}
+a.link{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+#logo{
+    margin: 0;
+    display: block;
+    padding-left: 20px;
+    width: 60%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

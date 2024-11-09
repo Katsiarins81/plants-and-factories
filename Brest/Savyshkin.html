@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>МЭЗ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../460fabrica.css" type="text/css">
+    <link rel="stylesheet" href="Savyshkin.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<header> 
+    <ul class="menu">
+        <li id="d1"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></li> 
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+    <div id="d01"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></div>
+    <ul class="bur_menu">    
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+</header>
+<script>
+    let bur=document.querySelector(".burger");
+    let bur_menu=document.querySelector(".bur_menu")
+  bur.onclick = () => {
+       bur.classList.toggle("active");
+        bur_menu.classList.toggle("active");
+        console.log(bur_menu)
+    };
+</script>
+    <main>
+        <article id="divup">
+            <div id="textup">
+                <h1 id="textname">
+                    Савушкин продукт
+                </h1>
+                <p class="align-center">
+                    Компания «Савушкин продукт» – лидер молочной отрасли Беларуси, один из крупнейших производителей натуральной молочной продукции в Восточноевропейского региона, входит в первую тройку крупнейших молочных компаний СНГ.
+                </p>
+            </div>
+            <div id="pic">
+                <div id="picblum"></div>
+            </div>
+        </article>
+        <article id="divdown">
+            <div id="textdown">
+              <p>  Автоматизация производственных процессов в компании составляет 90%. Это позволяет гарантировать высокое качество и безопасность производимых продуктов питания.
+              </p>
+                <p>   Группа компаний «Савушкин продукт» занимается благородным бизнесом:
+                    обеспечивает людей натуральными молочными продуктами без консервантов и искусственных наполнителей.
+                    </p>
+                <p>Компания не только возглавляет рейтинг эффективно работающих предприятий пищевой отрасли страны, но и вот уже более 18-ти лет является фаворитом потребительских предпочтений белорусов.
+                Продукция компании получает признание на международном уровне и высшие награды в таких авторитетных конкурсах, как Superior Taste Award (Бельгия).
+                </p>
+                <h3>Портфель брендов компании:</h3>
+                <ul>
+                <li>«Савушкин»,
+                <li>«Брест-Литовск»,
+                <li>«TEOS»,
+                <li>«Оптималь»,
+                <li>«СуперКид»,
+                <li>«SVEŽA»,
+                <li>«Апети»,
+                <li>«Активил»,
+                <li>«Березка»,
+                <li>«Ласковое лето».
+            </li>
+                </ul>
+                <p>   Около 60% производимой продукции «Савушкин продукт» направляется на экспорт. Экспортный рынок – более 30 стран мира. Среди них: Россия, КНР, Казахстан, Азербайджан, Япония, Филиппины, Иордания, Сингапур, США, страны ЕС и др.
+                </p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

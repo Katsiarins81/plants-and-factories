@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гродно</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="460index.css" type="text/css">
+    <link rel="stylesheet" href="../dt460.css" type="text/css">
+    <link rel="stylesheet" href="Grodno.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+<header> 
+    <ul class="menu">
+        <li id="d1"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></li> 
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+    <div id="d01"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></div>
+    <ul class="bur_menu">    
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+</header>
+<script>
+    let bur=document.querySelector(".burger");
+    let bur_menu=document.querySelector(".bur_menu")
+  bur.onclick = () => {
+       bur.classList.toggle("active");
+        bur_menu.classList.toggle("active");
+        console.log(bur_menu)
+    };
+</script>
+<main>
+    <article id="art1" class="art">
+    <img src="img/belnaviny 1.png" class="img1">
+        <a href="GKZ.html" class="link1">
+            <img src="img/Vector.png">
+        </a>
+        <p> <a href="GKZ.html" class="link2" style="font-size: 50px">Гродненский<br>консервный<br>завод</a> </p>
+    </article>
+    <article id="art2" class="art">
+        <img src="img/Lek.png" class="img1">
+        <a href="GLK.html" class="link1">
+            <img src="img/Vector%20(1).png" style="width: 90%">
+        </a>
+        <p> <a href="GLK.html" class="link2" style="font-size: 50px">Гродненский<br>ликеро-<br>водочный <br>завод</a> </p>
+    </article>
+    <div id="help">
+        <a href="../map.html" class="link3"><img src="img/help.svg" id="img3"></a>
+    </div>
+</main>
+</body>
+</html>

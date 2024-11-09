@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bonfesto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../460fabrica.css" type="text/css">
+    <link rel="stylesheet" href="spartak.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+<header> 
+    <ul class="menu">
+        <li id="d1"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></li> 
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+    <div id="d01"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></div>
+    <ul class="bur_menu">    
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+</header>
+<script>
+    let bur=document.querySelector(".burger");
+    let bur_menu=document.querySelector(".bur_menu")
+  bur.onclick = () => {
+       bur.classList.toggle("active");
+        bur_menu.classList.toggle("active");
+        console.log(bur_menu)
+    };
+</script>
+<main>
+    <article id="divup">
+        <div id="textup">
+            <h1 id="textname">
+                Спартак
+            </h1>
+            <p class="align-center">
+                СП ОАО «Спартак» – один из крупнейших производителей кондитерских изделий и полуфабрикатов собственного производства в Республике Беларусь, выпускающий около 350 наименований кондитерских изделий, включая изделия лечебно-профилактического действия.
+                </p>
+        </div>
+        <div id="pic">
+            <div id="picblum"></div>
+        </div>
+    </article>
+    <article id="divdown">
+        <div id="textdown">
+            <h2> История</h2>
+            <p>  4 июня 1924 года в Гомеле открылось кондитерское предприятие «Просвет», с этого дня и начинается отсчет времени, летопись фабрики «Спартак».
+            </p>
+            <p>  К концу 1924 года фабрика «Просвет» выпускала карамель, конфеты, ирис, мармелад. Название «Спартак», присвоенное кондитерскому комбинату 8 ноября 1931 года, задало ритм предприятию на всю последующую историю.
+            </p>
+            <p>    Уже к 1941 году комбинат представлял собой одно из крупнейших предприятий пищевой промышленности в Республике с годовой выработкой 11,5 тысяч тонн кондитерских изделий. Продукция с маркой «Спартак» была известна всей стране и экспортировалась за границу. В 1994 году, в ходе реорганизации государственное предприятие кондитерская фабрика «Спартак» было преобразовано в открытое акционерное общество «Спартак», а в 1998 году - в совместное предприятие открытое акционерное общество «Спартак».
+            </p>
+            <h2>   Деятельность фабрики</h2>
+            <p>    Основными видами продукции, выпускаемой фабрикой, являются: карамель, конфеты, шоколад и шоколадные изделия, печенье, вафельные изделия, торты и пирожные. На фабрике сегодня существуют 4 основных цеха: бисквитный, карамельный, вафельный, конфетно-шоколадный, где в широком ассортименте производят вышеуказанные виды продукции.
+            </p>
+            <p>   Основное производство имеет высокий уровень технического развития. Практически полностью автоматизированы линии по производству шоколада, печенья, карамели, вафель. Стратегия развития фабрики также предусматривает значительное изменение ассортимента продукции и повышение её качества за счёт сети цеховых и центральных лабораторий, оснащённых современным оборудованием, где осуществляется строгий входной контроль сырья, полуфабрикатов и готовой продукции.</p>
+            </p>
+        </div>
+    </article>
+</main>
+</body>
+</html>
