@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Слодыч</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../460fabrica.css" type="text/css">
+    <link rel="stylesheet" href="breadminsj.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+<header>
+    
+    <ul class="menu">
+        <li id="d1"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></li> 
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+    <div id="d01"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></div>
+    <ul class="bur_menu">    
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+</header>
+<script>
+    let bur=document.querySelector(".burger");
+    let bur_menu=document.querySelector(".bur_menu")
+  bur.onclick = () => {
+       bur.classList.toggle("active");
+        bur_menu.classList.toggle("active");
+        console.log(bur_menu)
+    };
+</script>
+<main>
+    <article id="divup">
+        <div id="textup">
+            <h1 id="textname">
+                МинскХлебПром
+            </h1>
+            <p class="align-center">
+                УП "Минскхлебпром" - крупнейшее хлебопекарное предприятие Беларуси. Оно состоит из шести территориально обособленных подразделений. Среднесуточная мощность производства хлебобулочных изделий составляет 255 тонн, кондитерских изделий - около 16 тонн, более 8 тонн продукции оборонного назначения, порядка 10 тонн имбирных пряников и печенья.
+            <p class="align-center">
+
+                Миссия КУП «Минскхлебпром»: производство высококачественных кондитерских и хлебобулочных изделий. Девиз предприятия: "Мы заботимся о том, чтобы жители нашей страны жили хорошо. Мы постоянно работаем над повышением качества нашей продукции. Мы – команда профессионалов с многолетним опытом работы."
+
+            </p>
+        </div>
+        <div id="pic">
+            <div id="picblum"></div>
+        </div>
+    </article>
+    <article id="divdown">
+        <div id="textdown">
+
+            <p> Продукцию предприятий можно разделить на следующие группы:
+            </p>
+            <h2>
+                Хлеба и хлебобулочные изделия:
+            </h2>
+            <ul id="list1">
+                <li>250 наименований хлебобулочных изделий;</li>
+                <li>100 наименований сухарно-бараночной продукции;</li>
+                <li>60 наименований ржаных и ржано-пшеничных хлебов, в том числе более 35 заварных хлебов.</li>
+            </ul>
+            <h2>Кондитерские изделия:</h2>
+            <ul id="list2">
+                <li>более 100 наименований тортов, в том числе заказные;</li>
+
+                <li>40 наименований имбирных пряников;</li>
+                <li>15 наименований овсяного печенья, в том числе глазированного;</li>
+                <li>более 20 наименований вафель с разнообразными начинками;</li>
+                <li>5 наименований вафельных тортов объединенных под торговой маркой "Гармония вкуса" :</li>
+                <li> 12 наименований рулетов бисквитных (торговая марка "Мастер Бисквич").</li>
+
+            </ul>
+
+            <h2>Полуфабрикаты</h2>
+            <p>Главное достоинство  изделий в том, что они произведены из натурального сырья без использования консервантов и стабилизаторов, что делает их особенно ценными и привлекательными для покупателей.
+            Постоянно расширяя производство и совершенствуя технологии, предприятие преследует цель обеспечить высококачественными товарами продовольственный рынок Беларуси, а также рынки ближнего и дальнего зарубежья.
+            </p>
+
+        </div>
+    </article>
+</main>
+</body>
+</html>
