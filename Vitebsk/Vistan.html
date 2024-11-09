@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вистан</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../460fabrica.css" type="text/css">
+    <link rel="stylesheet" href="Vistan.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<header> 
+    <ul class="menu">
+        <li id="d1"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></li> 
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+    <div id="d01"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></div>
+    <ul class="bur_menu">    
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+</header>
+<script>
+    let bur=document.querySelector(".burger");
+    let bur_menu=document.querySelector(".bur_menu")
+  bur.onclick = () => {
+       bur.classList.toggle("active");
+        bur_menu.classList.toggle("active");
+        console.log(bur_menu)
+    };
+</script>
+    <main>
+        <article id="divup">
+            <div id="textup">
+                <h1 id="textname">
+                    ОАО ВИСТАН
+                </h1>
+                <p class="align-center">
+                    Открытое акционерное общество «ВИСТАН» является одним из старейших станкостроительных предприятий Республики Беларусь.
+                    История завода берет свое начало от армейской мастерской, организованной в 1914 году. В апреле 1918 года мастерская была преобразована в завод сельхозмашин. С 1932 года началось становление завода как станкостроительного предприятия.                </p>
+            </div>
+            <div id="pic">
+                <div id="picblum"></div>
+            </div>
+        </article>
+        <article id="divdown">
+            <div id="textdown">
+              <p>  В 1999 году в состав завода вошло Витебское СКБ ЗШ и ЗС, что позволило ему более оперативно решать вопросы перспективного проектирования и доводки новой техники.
+              </p>
+                <p> С целью повышения коэффициента использования мощностей, объединения энергоемких технологических процессов (литейное, термическое и гальваническое производство), эффективной загрузки квалифицированных кадров, организации внутреннего кооперированного изготовления деталей, способствующей снижению себестоимости изготавливаемой продукции и тем самым повышению ее конкурентоспособности, в мае 2002 года произведена реорганизация предприятия путем присоединения к нему РУП «Витебский станкостроительный завод имени Коминтерна» в качестве структурного подразделения. В результате произведенной реорганизации расширилась номенклатура выпускаемого предприятием оборудования, завод стал крупнейшим в СНГ производителем станочной продукции.
+                </p>
+                <p> Производственная программа ОАО «ВИСТАН» сориентирована на технологическое обеспечение автотрактной, электротехнической, аэрокосмической, сельхозмашиностроения и других ведущих отраслей машиностроительного комплекса.
+                </p>
+                <p>Высокий уровень технической оснащенности и организации производства, строгая технологическая дисциплина, постоянное использование и внедрение последних достижений отечественного и зарубежного станкостроения обеспечивают изготовление конкурентоспособных станков и оборудования, отвечающих современным мировым требованиям.
+                </p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

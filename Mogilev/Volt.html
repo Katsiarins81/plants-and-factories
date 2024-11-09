@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>МЭЗ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../460fabrica.css" type="text/css">
+    <link rel="stylesheet" href="Volt.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<header> 
+    <ul class="menu">
+        <li id="d1"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></li> 
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+    <div id="d01"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></div>
+    <ul class="bur_menu">    
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+</header>
+<script>
+    let bur=document.querySelector(".burger");
+    let bur_menu=document.querySelector(".bur_menu")
+  bur.onclick = () => {
+       bur.classList.toggle("active");
+        bur_menu.classList.toggle("active");
+        console.log(bur_menu)
+    };
+</script>
+    <main>
+        <article id="divup">
+            <div id="textup">
+                <h1 id="textname">
+                    ОАО «ВОЛЬТ»
+                </h1>
+                <p class="align-center">
+                    Организация создана на основании приказа Министерства сельского хозяйства БССР от 12 июня 1958 года № 361 на базе бывшей Луполовской МТС, расположенной в районе одноименной железнодорожной станции в г. Могилеве. С 1961 года организация стала называться «Могилевский электроремонтный завод».                </p>
+            </div>
+            <div id="pic">
+                <div id="picblum"></div>
+            </div>
+        </article>
+        <article id="divdown">
+            <div id="textdown">
+              <p> В 1975 -1976 годах была осуществлена коренная реконструкция завода, что позволило производить ремонт свыше 60 тысяч условных единиц электродвигателей более и 50 тысяч комплектов автотракторного электрооборудования в год, много сложной мелкосерийной техники не только отечественных, но и зарубежных производителей. Техническая оснащенность, объем, и качество ремонтных работ позволили в 1978 году стать объектом для проведения Всесоюзного семинара под девизом «Деталям - вторая жизнь».
+              </p>
+                <p>  В марте 1994 года Могилевский электроремонтный завод преобразован в открытое акционерное общество «Вольт». Его задача оказывать услуги по ремонту электродвигателей, сварочного и автотракторного электрооборудования организациям агропромышленного комплекса Республики Беларусь.
+                </p>
+                <p> В 2004 году Вольт получил сертификат соответствия  № BV/112004.1.0.OB236 на услуги автосервиса - капитальный ремонт автомобильного электрооборудования: стартеров, генераторов и генераторных установок, зарегистрированный в реестре Национальной системы сертификации Республики Беларусь от 8 апреля 2004 г.
+                </p>
+                <p> В 2006 году проведена аттестация производства о соответствии требованиям технического кодекса ТКП 023 - 2006 «Услуги по ремонту сельскохозяйственной техники и составных частей» обеспечивающего стабильность заданного качества оказываемых услуг по ремонту автотракторного электрооборудования и асинхронных электродвигателей.
+                </p>
+                <p>12 июля 2017 года ОАО «Вольт» зарегистрировано Министерством экономики Республики Беларусь как инкубатор малого предпринимательства (свидетельство № 36).
+                </p>
+
+            </div>
+        </article>
+    </main>
+</body>
+</html>

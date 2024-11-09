@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>МЭЗ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../460fabrica.css" type="text/css">
+    <link rel="stylesheet" href="MEZ.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+<header> 
+    <ul class="menu">
+        <li id="d1"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></li> 
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+    <div id="d01"> <a href="../index.html" class="link"><img src="img/logo.png" id="logo"></a></div>
+    <ul class="bur_menu">    
+        <a href="../Minsk/Minsk.html" class="link"><li id="d2">МИНСК </li></a>
+        <a href="../Gomel/Gomel.html" class="link"><li id="d3">ГОМЕЛЬ</li></a>
+        <a href="../Brest/Brest.html" class="link"><li id="d4">БРЕСТ</li></a>
+        <a href="../Vitebsk/Vitebsk.html" class="link"><li id="d5">ВИТЕБСК</li></a>
+        <a href="../Mogilev/Mogilev.html" class="link"><li id="d6">МОГИЛЁВ</li></a>
+        <a href="../Grodno/Grodno.html" class="link"><li id="d7">ГРОДНО</li></a>
+    </ul>
+</header>
+<script>
+    let bur=document.querySelector(".burger");
+    let bur_menu=document.querySelector(".bur_menu")
+  bur.onclick = () => {
+       bur.classList.toggle("active");
+        bur_menu.classList.toggle("active");
+        console.log(bur_menu)
+    };
+</script>
+    <main>
+        <article id="divup">
+            <div id="textup">
+                <h1 id="textname">
+                    Витебский МЭЗ
+                </h1>
+                <p class="align-center">
+                    "Взаимовыгодное партнерство – путь к совершенству" Открытое акционерное общество «Витебский маслоэкстракционный завод» - один из крупнейших на территории Республики Беларусь производитель сырого (нерафинированного) растительного масла.
+                </p>
+            </div>
+            <div id="pic">
+                <div id="picblum"></div>
+            </div>
+        </article>
+        <article id="divdown">
+            <div id="textdown">
+               <p> Деловые партнеры — предприятия пищевой промышленности Республики Беларусь и крупнейшие сельскохозяйственные организации страны.Витебский маслоэкстракционный завод экспортируем  продукцию в Россию, страны Балтии, Западной Европы, Скандинавии и Китай.
+               </p>
+                <p>Главная стратегическая цель предприятия — производство конкурентоспособной и безопасной продукции, соответствующей законодательным и другим обязательным требованиям, превосходящей ожидания потребителей, приносящей устойчивую прибыль для дальнейшего развития производства с целью удовлетворения всех заинтересованных сторон. Годовой объем производства растительных масел составляет около 40 000 тонн.
+                </p>
+                <p>На сегодняшний день производственные мощности предприятия позволяют перерабатывать до 400 тонн масличных семян в сутки. Предприятие с каждым годом расширяет географию экспортных поставок.</p>
+            <p>
+                Современные технологии и модернизированные производственные мощности, позволяют нам сегодня представить на рынке по-настоящему широкий ассортимент масложировой продукции.
+            </p>
+                <p>
+                    Основной продукцией предприятия являются:</p>
+                <ul>
+                    <li>нерафинированные растительные масла: рапсовое, подсолнечное, соевое и масло из семян редьки масличной и др;</li>
+                    <li>шрот: рапсовый, подсолнечный, соевый, из семян редьки масличной и др.;</li>
+                    <li>фузы масличные.</li>
+                </ul>
+
+                <p> Наибольший удельный вес в производстве растительных масел занимает масло рапсовое нерафинированное.</p>
+
+               <p> Растительные масла применяются для пищевых, технических и медицинских целей. Кроме того, ОАО "Витебский МЭЗ" завоевало ряд наград в различных конкурсах потребительских предпочтений.
+               </p>
+               </p>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
