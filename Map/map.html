@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+        html{
+            width: 100%;
+            overflow: hidden;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            width: 100%;
+            overflow: hidden;
+        }
+        h1{
+            font-size: 98px;
+            font-family: Oswald,sans-serif;
+            font-weight: normal;
+            margin: 0;
+            text-align: center;
+        }
+     
+        #header{
+            width:100%;
+            height: 170px;
+            margin: 0 auto;
+            padding: 0px;
+
+        }
+        #karta {
+            max-width: 100%;
+            margin: 36px auto;
+            display: block;
+            /*width: 824px;
+            height:690px;*/
+        }
+
+        #progress{
+            font-family: Oswald,sans-serif;
+            font-size: 64px;
+            width: 50%;
+            height:96px;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #imgWithMap{
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+            width: 700px;
+            height:587px;
+            transform: scale(1);
+            text-align: center;
+        }
+        .question-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            text-align: center;
+            z-index: 3;
+        }
+
+        .question-popup.active {
+            display: block;
+        }
+        #questionClose{
+            width:100%;
+            height:2000px;
+            background-color: white;
+            opacity: 0.5;
+            z-index: 2;
+            position: absolute;
+            top:0;
+            left:0;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #e74149;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .correct-answer {
+            color: green;
+            display: none;
+        }
+        .buttonsInWindow{
+            margin:10px;
+            padding:0;
+            background-color: black;
+            border-radius: 10px;
+            width: 109px;
+            height: 109px;
+            position: fixed;
+
+        }
+        #ResetButton{
+            bottom: 44px;
+            right: 44px;
+        }
+        #HomeButton{
+            top: 44px;
+            left: 44px;
+            background-image: url("img/Home.png");
+            background-size: cover;
+        }
+        .buttonsInWindow img{
+            width: 109px;
+            height: 109px;
+            object-fit: cover;
+        }
+        @media (max-width: 700px) {
+            h1{
+                font-size: 64px;
+                text-align: center;
+            }
+            #progress{
+                font-size: 48px;
+                width:90%;
+            }
+            #header{
+                height: 100px;
+            }
+            .buttonsInWindow{
+                position: relative;
+                margin:20px;
+            }
+            #HomeButton{
+                top:0;
+                left:0;
+                margin:30px auto;
+                display: block;
+                width:80px;
+                height:80px;
+                z-index: 1;
+            }
+            #ResetButton{
+                display: none;
+            }
+            #imgWithMap{
+                height:inherit;
+            }
+        }
+        @media (max-width:350px) {
+            h1{
+                font-size: 48px;
+                text-align: center;
+            }
+            
+        }
+        @media (min-height:700px) and (orientation:portrait) {
+            #HomeButton{
+                margin-top: 15vh;
+            }
+        }
+        @media (orientation:portrait) {
+            .correct-answer{
+                margin-top: 5px;
+            }            
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="window.location.reload()" class = "buttonsInWindow" id="ResetButton"><img src="img/Reset.png"></button>
+    <div id="header"><h1>Знаешь ли ты:</h1></div>
+    
+    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.6.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="imgWithMap" class="map1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+viewBox="0 0 397.28 322.89" style="enable-background:new 0 0 397.28 322.89;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#000000;stroke-miterlimit:10;}
+</style>
+<image style="overflow:visible;" width="531" height="435" href="img/Map.png" transform="matrix(0.75 0 0 0.75 -1 -2.11)">
+</image>
+<circle class="st0" cx="182.52" cy="153.06" r="8" id="circle1" onclick="showQuestion(1)"/>
+<ellipse cx="34.98" cy="169.94" rx="5.67" ry="5.21" id="circle2" onclick="showQuestion(5)"/>
+<ellipse cx="25.98" cy="267.3" rx="5.67" ry="5.21" id="circle3" onclick="showQuestion(3)"/>
+<ellipse cx="281.5" cy="64.22" rx="5.67" ry="5.21" id="circle4" onclick="showQuestion(6)"/>
+<ellipse cx="303.02" cy="150.69" rx="5.67" ry="5.21" id="circle5" onclick="showQuestion(4)"/>
+<ellipse cx="321.02" cy="241.87" rx="5.67" ry="5.21" id="circle6" onclick="showQuestion(2)"/>
+</svg>
+
+ <!--   <map name="Navigation">
+        <area shape="circle" coords="245,206,10" href="#" onclick="showQuestion(1)" title="Минская область" alt="Minsk">
+        <area shape="circle" coords="429,325,7" href="#" onclick="showQuestion(2)" title="Гомельская область" alt="Gomel">
+        <area shape="circle" coords="36,359,7" href="#" onclick="showQuestion(3)" title="Брестская область" alt="Brest">
+        <area shape="circle" coords="405,203,7" href="#" onclick="showQuestion(4)" title="Могилёвская область" alt="Mogilev">
+        <area shape="circle" coords="48,228,7" href="#" onclick="showQuestion(5)" title="Гроднеская область" alt="Grodno">
+        <area shape="circle" coords="376,87,7" href="#" onclick="showQuestion(6)" title="Витебская область" alt="Vitebsk">-->
+        <!-- Добавить координаты для других областей -->
+    </map>
+    <div id = "questionClose"></div>
+    <div id="questionPopup" class="question-popup">
+        <p id="questionText"></p>
+        <input type="text" id="answerInput">
+        <button onclick="checkAnswer()">Проверить</button>
+        <div id="correctMessage" class="correct-answer">Правильно!</div>
+    </div>
+    <div id="progress">Прогресс: 0/30</div>
+    <button onclick="location ='../index.html'" class = "buttonsInWindow" id ="HomeButton"></button>
+    <script>
+        let questionClose = document.getElementById("questionClose");
+        questionClose.style.zIndex = -1;
+        let answer=document.getElementById('answerInput');
+        const questions = {
+    1: [
+        { text: "На заводе какого бренда производят сок 'ДОБРЫЙ'?", answer: "кока-кола" },
+        { text: "На чём спецуиализируется завод 'Атлант'?", answer: "бытовая техника" },
+        { text: "Какой производитель шоколада известен в Минской области?", answer: "коммунарка" },
+        { text: "Какой производитель молока находится в Минске?", answer: "минский молочный завод" },
+        { text: "МЗБН производит воду(да/нет)?", answer: "да" }
+    ],
+    2: [
+        { text: "На какой фабрике выпускается самый вкусный шоколад в Гомеле?", answer: "спартак" },
+        { text: "Какой приправы производят много в этой области?", answer: "соли" },
+        { text: "Какой основной вид промышленности преобладает в Гомеле?", answer: "машиностроение" },
+        { text: "Какое предприятие является крупнейшим в Гомеле?", answer: "гомсельмаш" },
+        { text: " Какой ресурс активно используется в химической промышленности региона?", answer: "уголь" }
+    ],
+    3: [
+        { text: "Лидер молочной отрасли данной области это...?", answer: "савушкин продукт" },
+        { text: "Какой тип промышленности преобладает в Бресте? ", answer: "лёгкая" },
+        { text: "Какой город в Брестской области известен производством мебели?", answer: "барановичи" },
+        { text: "Какой основной вид продукции производится на Брестском мясокомбинате?", answer: "мясо" },
+        { text: "Какой завод в Бресте специализируется на производстве электроники?", answer: "энергомаш" }
+    ],
+    4: [
+        { text: "Основная продукция фабрики 'Красный пищевик'?", answer: "зефир" },
+        { text: "Какой завод в Могилёве производит молочную продукцию", answer: "бабушкина крынка" },
+        { text: "Что производит 'Могилёвлифтмаш', кроме лифтового оборудования", answer: "подъёмники" },
+        { text: "Какой вид конфет популярен в Могилёве?", answer: "ирис" },
+        { text: "Завод, производящий мясо и продукцию из него в этой области называется?", answer: "могилёвский мясокомбинат" }
+    ],
+    5: [
+        { text: "Что не производится на гродненском консервном заводе: соки, соленые огурцы, ликёр или повидло?", answer: "ликёр" },
+        { text: "Кто занимается производством электроэнергии в Гродно?", answer: "гродноэнерго" },
+        { text: "В структуре пищевой паромышленности этой области лидирует табак(да/нет)?", answer: "да" },
+        { text: "Производство каких продуктов доминирует в этой области?", answer: "питания" },
+        { text: "Существует ли предприятие 'ГродноАзот'(да/нет)?", answer: "да" }
+    ],
+    6: [
+        { text: "Одно из старейших станкостроительных предприятий Республики Беларусь - это...?", answer: "вистан" },
+        { text: "Какой вид продукции является основным в текстильной промышленности Витебска? ", answer: "ткани" },
+        { text: "Какой металлургический завод находится в Витебске? ", answer: "стеклометаллургический" },
+        { text: "Какой вид продукции является основным в производстве в Витебске?", answer: "керамика" },
+        { text: " Какой сельскохозяйственный продукт активно перерабатывается в Витебской области? ", answer: "Молоко" }
+    ]
+};
+        let progress = {1:[false, false, false, false, false],2:[false, false, false, false, false],3:[false, false, false, false, false],4:[false, false, false, false, false],5:[false, false, false, false, false],6:[false, false, false, false, false]};
+        let totalQuestions = 30;
+        let answeredQuestions = 0;
+        let AreaID = 0;
+        let PodAreaID = 0;
+        let circle = "circle";
+
+
+        console.log(progress)
+
+        let currentQuestion = null;
+        let currentAnswer = null;
+
+        answer.addEventListener('mouseenter', function(event) {
+            event.target.setAttribute('autocomplete', 'off')
+        });
+        function showQuestion(areaId) {
+            AreaID = areaId;
+            document.getElementById('answerInput').value = "";
+            const popup = document.getElementById('questionPopup');
+            const questionText = document.getElementById('questionText');
+
+            // Выбираем случайный вопрос из массива для данной области
+            PodAreaID = Math.floor(Math.random() * questions[areaId].length)
+            currentQuestion = questions[areaId][PodAreaID];
+            currentAnswer = currentQuestion.answer;
+
+            questionText.textContent = currentQuestion.text;
+            popup.classList.add('active');
+            questionClose.style.zIndex = 2;
+        }
+
+        function checkAnswer() {
+            const answer = document.getElementById('answerInput').value.toLowerCase();
+            const correctMessage = document.getElementById('correctMessage');
+
+            if (answer === currentAnswer) {
+                    progress[AreaID][PodAreaID] = true;
+                    questions[AreaID].splice(PodAreaID,1);
+                    console.log(questions);
+                    answeredQuestions++;
+                    updateProgress();
+                    if(questions[AreaID].length === 1){
+                        console.log(circle + AreaID.toString());
+                        document.getElementById(circle + AreaID.toString()).style.zIndex=-4;
+
+                    }
+                
+                correctMessage.style.display = 'block';
+                setTimeout(() => {
+                    document.getElementById('questionPopup').classList.remove('active');
+                    correctMessage.style.display = 'none';
+                    questionClose.style.zIndex = -1;
+                }, 1500);
+            }
+            else{
+                document.getElementById('answerInput').value = "Неверно";
+                setTimeout(() => {
+                    document.getElementById('questionPopup').classList.remove('active');
+                    correctMessage.style.display = 'none';
+                    questionClose.style.zIndex = -1;
+                    
+                }, 1500);
+            }
+        }
+
+        function updateProgress() {
+            const progressElement = document.getElementById('progress');
+            progressElement.textContent = `Прогресс: ${answeredQuestions}/${totalQuestions}`;
+        }
+    </script>
+</body>
+</html>
